@@ -1,0 +1,27 @@
+{
+  "name": "bookstore",
+  "version": "1.0.0",
+  "description": "mern stack website ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KamleshSuthar13/bookStoreWeb.git"
+  },
+  "author": "Kamlesh Suthar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KamleshSuthar13/bookStoreWeb/issues"
+  },
+  "homepage": "https://github.com/KamleshSuthar13/bookStoreWeb#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.8.4",
+    "nodemon": "^3.1.7"
+  }
+}
