@@ -1,0 +1,78 @@
+[
+    {
+        "id": 1,
+        "name": "Science Book",
+        "title": "Physics for Beginners",
+        "price": 0,
+        "category": "education",
+        "image": "https://cdn.pixabay.com/photo/2022/11/08/06/05/read-7577787_1280.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Comic Book",
+        "title": "Adventures of Hero",
+        "price": 0,
+        "category": "free",
+        "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?fit=crop"
+    },
+    {
+        "id": 3,
+        "name": "Cooking Book",
+        "title": "Tasty Recipes",
+        "price": 0,
+        "category": "lifestyle",
+        "image": "https://cdn.pixabay.com/photo/2022/11/08/06/05/read-7577787_1280.jpg"
+
+    },
+    {
+        "id": 4,
+        "name": "History Book",
+        "title": "World History",
+        "price": 0,
+        "category": "free",
+        "image": "https://cdn.pixabay.com/photo/2022/11/08/06/05/read-7577787_1280.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Art Book",
+        "title": "Painting Masterpieces",
+        "price": 0,
+        "category": "free",
+        "image": "https://images.unsplash.com/photo-1565043666747-69f6646db940?fit=crop"
+    },
+    {
+        "id": 6,
+        "name": "Travel Guide",
+        "title": "Explore the World",
+        "price": 0,
+        "category": "travel",
+        "image": "https://cdn.pixabay.com/photo/2022/11/08/06/05/read-7577787_1280.jpg"
+
+    },
+    {
+        "id": 7,
+        "name": "Fantasy Novel",
+        "title": "Dragon's Quest",
+        "price": 0,
+        "category": "free",
+        "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?fit=crop"
+        
+    },
+    {
+        "id": 8,
+        "name": "Health Guide",
+        "title": "Healthy Living",
+        "price": 0,
+        "category": "lifestyle",
+        "image": "https://cdn.pixabay.com/photo/2022/11/08/06/05/read-7577787_1280.jpg"
+
+    },
+    {
+        "id": 9,
+        "name": "Programming Book",
+        "title": "Learn JavaScript",
+        "price": 0,
+        "category": "free",
+        "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?fit=crop"
+    }
+]
