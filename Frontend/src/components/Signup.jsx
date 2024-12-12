@@ -1,17 +1,46 @@
 import React from "react";
-import { Link } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import Login from "./Login";
 import { useForm } from "react-hook-form";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 const Signup = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data); // Handle the form data here
+  const onSubmit = async (data) => {
+    const userInfo = {
+      fullname: data.fullname,
+      email: data.email,
+      password: data.password,
+    };
+    await axios
+      .post("http://localhost:4001/user/signup", userInfo)
+      .then((res) => {
+        console.log(res.data);
+        if (res.data) {
+          toast.success("Signup Successfully");
+          navigate(from, { replace: true });
+          setTimeout(() => {
+            window.location.reload();
+          }, 2000);
+        }
+        localStorage.setItem("Users", JSON.stringify(res.data.user));
+      })
+      .catch((err) => {
+        if (err.response) {
+          console.log(err);
+          toast.error("Error: " + err.response.data.message);
+        }
+      });
   };
 
   return (
@@ -34,10 +63,10 @@ const Signup = () => {
                 className="w-80 px-3 border rounded-md outline-none py-1 dark:bg-slate-900 dark:text-white"
                 type="text"
                 placeholder="Enter Your Full Name"
-                {...register("name", { required: true })}
+                {...register("fullname", { required: true })}
               />
               <br />
-              {errors.name && (
+              {errors.fullname && (
                 <span className="text-red-500 text-sm">Name is required</span>
               )}
             </div>

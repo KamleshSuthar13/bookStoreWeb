@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from '../Navbar'
 import Footer from '../Footer'
 import Coursescomp from '../Coursescomp'
-import list from "../../../public/list.json"
 
 const Course = () => {
   // console.log(list);
